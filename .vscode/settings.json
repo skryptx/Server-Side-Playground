@@ -20,7 +20,7 @@
     },
     "peacock.color": "#dd0531",
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "ms-python.autopep8",
+    "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.formatOnPaste": true,
     "pylint.args": ["--rcfile=.\\python\\.pylintrc"]
 }
