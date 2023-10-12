@@ -22,5 +22,9 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.formatOnPaste": true,
-    "pylint.args": ["--rcfile=.\\python\\.pylintrc"]
+    "pylint.args": [
+      "--rcfile=.\\python\\.pylintrc"
+    ],
+    "editor.defaultFoldingRangeProvider": "ms-python.black-formatter",
+    "pylint.importStrategy": "fromEnvironment"
 }
