@@ -19,15 +19,15 @@ print(no_list)
 # Initialize an array of length n with certain value(0 or anything)
 
 n = 5
-arr = [1] * n
-print(arr)  # ans: [1,1,1,1,1]
+list = [1] * n
+print(list)  # ans: [1,1,1,1,1]
 
 # Sublist or slicing array
-arr = [1, 2, 3, 4, 5, 6]
-print(arr[1:4])  # ans: [2,3,4]
+list = [1, 2, 3, 4, 5, 6]
+print(list[1:4])  # ans: [2,3,4]
 
 # accessing negative index does not throw error in python
-print(arr[-1])  # ans: 6 -> it gives last index of array
+print(list[-1])  # ans: 6 -> it gives last index of array
 
 
 #######################
@@ -36,13 +36,31 @@ print(arr[-1])  # ans: 6 -> it gives last index of array
 # Iterating the array
 
 # Method 1: only have access to index
-for i in range(len(arr)):
-    print(arr[i])
+for i in range(len(list)):
+    print(list[i])
 
 # Method 2: only have access to value one by one
-for val in arr:
+for val in list:
     print(val)
 
 # Method 3: have access to both index and value
-for i, val in enumerate(arr):
-    print(arr[i] == val)
+for i, val in enumerate(list):
+    print(list[i] == val)
+
+
+# Use unpacking with multiple arrays,
+#  used to combine 2 arrays, and values received are in pairs
+#  one from each array
+list1 = [1, 3, 5]
+list2 = [2, 4, 6]
+for val1, val2 in zip(list1, list2):
+    print(val1, val2)
+
+
+# Sort the array
+
+list = [2, 6, 3, 1, 5, 9, 4]
+list.sort()  # => return nothing, it will sort in place
+print(list)
+list.sort(reverse=True)  # => reverses the list
+print(list)
