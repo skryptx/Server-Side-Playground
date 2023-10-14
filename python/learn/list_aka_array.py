@@ -57,10 +57,25 @@ for val1, val2 in zip(list1, list2):
     print(val1, val2)
 
 
-# Sort the array
+# Sort the array of numbers
 
 list = [2, 6, 3, 1, 5, 9, 4]
 list.sort()  # => return nothing, it will sort in place
 print(list)
 list.sort(reverse=True)  # => reverses the list
 print(list)
+
+# Sort the array of strings
+
+list = ["bob", "alice", "johnson"]
+list.sort()  # => will sort the list by names lexicographical order
+print(list)
+# we can also write custom function to sort the strings by another method
+# lets say we want to order the name by no. of o's
+list.sort(
+    key=lambda x: x.count("o"), reverse=True
+)  # => ans: ['johnson', 'bob', 'alice']
+print(list)
+
+
+# Comprehensions
