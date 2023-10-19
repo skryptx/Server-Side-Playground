@@ -10,3 +10,6 @@ print(hashmap.keys())  # ans: ["first_name"]
 
 hashmap1 = dict.fromkeys(["first_name", "last_name"], ["sinni", "singla"])
 print(hashmap1)
+
+for key, val in hashmap1.items():
+    print(key, val)
