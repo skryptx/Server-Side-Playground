@@ -16,7 +16,7 @@ print(heapq.heappop(min_heap))
 ## it compares first element , if they are same then goes to second element
 ## heap updates the data in place
 
-
+## python does not have max heap but can be implemented the below way
 ## we can convert a heap to max heap by multiplying
 ## element by minus(-) before pushing it to heap
 max_heap = []
