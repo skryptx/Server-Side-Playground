@@ -20,11 +20,12 @@
     },
     "peacock.color": "#dd0531",
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.defaultFormatter": "redhat.java",
     "editor.formatOnPaste": true,
     "pylint.args": [
       "--rcfile=.\\python\\.pylintrc"
     ],
-    "editor.defaultFoldingRangeProvider": "ms-python.black-formatter",
-    "pylint.importStrategy": "fromEnvironment"
+    "editor.defaultFoldingRangeProvider": "redhat.java",
+    "pylint.importStrategy": "fromEnvironment",
+    "java.debug.settings.onBuildFailureProceed": true
 }
