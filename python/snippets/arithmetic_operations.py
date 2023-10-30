@@ -1,4 +1,4 @@
-""" This modules has the arithmetic operations on negative and positive 
+""" This modules has the arithmetic operations on negative and positive
 numbers """
 import math
 
