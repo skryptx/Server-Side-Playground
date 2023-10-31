@@ -7,7 +7,6 @@ public class MathClass {
 
         // String to int can be done via Integer parse int function
         System.out.println(Integer.parseInt("1000"));
-
         /*
         double -> float -> long -> int -> short -> byte
         In the order shown above
