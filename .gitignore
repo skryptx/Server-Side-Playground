@@ -1,1 +1,8 @@
-java/PrincetonUniversity/.DS_Store
+#check on this documentation if not able to ignore the file.
+#https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# IDE - VSCode
+.vscode/*
+
+# System Files
+.DS_Store
