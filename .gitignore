@@ -1,1 +1,5 @@
-java/PrincetonUniversity/.DS_Store
+# IDE - VSCode
+.vscode/*
+
+# System Files
+.DS_Store
