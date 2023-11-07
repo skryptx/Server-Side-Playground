@@ -11,3 +11,8 @@ Note: Default value of int is 0
 1. We dont need to know the inner details of a class.
 e.g. Lets say we have a class `Car`, User wants to start `Car` by just calling `start()` function, we do not want to know what start is doing or what else start is calling inorder to start the car.
 2. Details of functionlity is abstracted away from the consumer.
+
+### Important Points
+
+1. If no constructor provided, then java will provide 0 argument default constructor.
+2. As soon as we declare a constructor, java wont provide default constructor by itself.
