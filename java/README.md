@@ -16,3 +16,17 @@ e.g. Lets say we have a class `Car`, User wants to start `Car` by just calling `
 
 1. If no constructor provided, then java will provide 0 argument default constructor.
 2. As soon as we declare a constructor, java wont provide default constructor by itself.
+
+### Explicit Type Casting
+
+When casting is done from type of more bytes to type of lesser bytes(e.g. long to int), you have to explicitly cast it. e.g.
+
+`long l = 102109832190339203`<br>
+`int i = (int) l; value will not be the same if it exceeds the limit`
+
+### Implicit Type Casting
+
+When casting is done from type of less bytes to type of more bytes(e.g. int to long), just assignment is enough. e.g.
+
+`int i = 10210983`<br>
+`long l = i; //value will be the same`
