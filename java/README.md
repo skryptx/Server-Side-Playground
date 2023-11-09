@@ -39,3 +39,4 @@ When casting is done from type of less bytes to type of more bytes(e.g. int to l
 `BigDecimal big3 = big1.add(big2);`
 
 2. Parameter is necessary to be in string other wise it will not be accurate.
+3. Add two different types, result will be bigger type.

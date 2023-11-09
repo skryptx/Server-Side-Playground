@@ -22,5 +22,16 @@ public class PrimitiveTypes {
         System.out.println(Short.MAX_VALUE);
         System.out.println(Integer.MAX_VALUE);
         System.out.println(Long.MAX_VALUE);
+
+        // sum of two different types is always represented by bigger type
+        var sumOfIntAndFloat = 5 + 5.0F;
+        System.out.println(sumOfIntAndFloat); // 10.0
+
+        //Character
+        char ch = 'A';
+        System.out.println((int)ch); // 65
+
+        ch += 10;
+        System.out.println(ch); // K
     }
 }
