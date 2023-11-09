@@ -30,3 +30,12 @@ When casting is done from type of less bytes to type of more bytes(e.g. int to l
 
 `int i = 10210983`<br>
 `long l = i; //value will be the same`
+
+### Important Notes
+
+1. When you want accurate result , do not use float or doube. Use BigDecimal in that scenario. <br>
+`BigDecimal big1 = new BigDecimal("2.3324324");`<br>
+`BigDecimal big2 = new BigDecimal("2.2343242");`<br>
+`BigDecimal big3 = big1.add(big2);`
+
+2. Parameter is necessary to be in string other wise it will not be accurate.
