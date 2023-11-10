@@ -40,3 +40,4 @@ When casting is done from type of less bytes to type of more bytes(e.g. int to l
 
 2. Parameter is necessary to be in string other wise it will not be accurate.
 3. Add two different types, result will be bigger type.
+4. if(i) is not allowed, assuming i is of any other type other than boolean.
