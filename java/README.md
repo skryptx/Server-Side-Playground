@@ -31,6 +31,11 @@ When casting is done from type of less bytes to type of more bytes(e.g. int to l
 `int i = 10210983`<br>
 `long l = i; //value will be the same`
 
+### Reference Types 
+1. Memory is of two types => Stack and Heap.
+2. Each object is stored in a heap.
+3. Each method has its own stack
+
 ### Important Notes
 
 1. When you want accurate result , do not use float or doube. Use BigDecimal in that scenario. <br>
