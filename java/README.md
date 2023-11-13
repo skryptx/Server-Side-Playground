@@ -33,7 +33,7 @@ When casting is done from type of less bytes to type of more bytes(e.g. int to l
 
 ### Reference Types 
 1. Memory is of two types => Stack and Heap.
-2. Each object is stored in a heap.
+2. <b> Each reference type variable is stored in a heap(and reference address is stored in stack with variable name) and primitive type variable is stored in stack directly. </b>
 3. Each method has its own stack
 
 ### Important Notes
