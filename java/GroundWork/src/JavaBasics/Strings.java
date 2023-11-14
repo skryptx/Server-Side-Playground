@@ -2,7 +2,7 @@ package JavaBasics;
 
 public class Strings {
     public static void main(String[] args) {
-
+        String s = "This is big ass string.";
         /*
         Left to right computation
          */
@@ -10,5 +10,7 @@ public class Strings {
         System.out.println("2" + 3 + 4); // 234
 
         System.out.println('2' + 3 + 4); // 57 ? => Ascii equivalent of '2' is 50
+
+        System.out.println(s.charAt(8)); // b
     }
 }

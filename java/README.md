@@ -40,7 +40,7 @@ When casting is done from type of less bytes to type of more bytes(e.g. int to l
 
 <b>1. String</b>\
 a) stringVar.subtring(5,13) // 5 is inclusive , 13 exclusive.\
-b) 
+b) stringVar.charAt(5) // returns character at index 5
 
 ### Important Notes
 
