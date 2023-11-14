@@ -36,6 +36,12 @@ When casting is done from type of less bytes to type of more bytes(e.g. int to l
 2. <b> Each reference type variable is stored in a heap(and reference address is stored in stack with variable name) and primitive type variable is stored in stack directly. </b>
 3. Each method has its own stack
 
+#### <u>Inbuilt Reference Classes</u>
+
+<b>1. String</b>\
+a) stringVar.subtring(5,13) // 5 is inclusive , 13 exclusive.\
+b) 
+
 ### Important Notes
 
 1. When you want accurate result , do not use float or doube. Use BigDecimal in that scenario. <br>
