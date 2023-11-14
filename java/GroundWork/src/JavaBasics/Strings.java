@@ -11,6 +11,12 @@ public class Strings {
 
         System.out.println('2' + 3 + 4); // 57 ? => Ascii equivalent of '2' is 50
 
-        System.out.println(s.charAt(8)); // b
+        System.out.println(s.charAt(8)); // b, s[8] is not allowed on string
+
+        // Convert string to array
+        char[] sArray = s.toCharArray(); // array basically
+
+        System.out.println(s.contains("is"));
+        System.out.println(s.indexOf("is"));
     }
 }
