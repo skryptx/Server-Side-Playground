@@ -41,6 +41,7 @@ When casting is done from type of less bytes to type of more bytes(e.g. int to l
 <b>1. String</b>\
 a) stringVar.subtring(5,13) // 5 is inclusive , 13 exclusive.\
 b) stringVar.charAt(5) // returns character at index 5
+c) Better option than String(immutable) is "StringBuffer"(in case of multithreading) and "StringBuilder"(incase of single threaded programs). 
 
 ### Important Notes
 
