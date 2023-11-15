@@ -43,6 +43,16 @@ a) stringVar.subtring(5,13) // 5 is inclusive , 13 exclusive.\
 b) stringVar.charAt(5) // returns character at index 5
 c) Better option than String(immutable) is "StringBuffer"(in case of multithreading) and "StringBuilder"(incase of single threaded programs). 
 
+### AutoBoxing and UnBoxing
+
+`Integer seven = 7;`\
+`Integer sevenAgain = 7`\
+`seven == sevenAgain` // true
+
+Definition: <b>Autoboxing</b> is the automatic conversion that the Java compiler makes between the primitive types and their corresponding object wrapper classes. For example, converting an int to an Integer, a double to a Double, and so on. If the conversion goes the other way, this is called <b>Unboxing</b>.
+
+1. Here internally 7 is changed to Integer.valueOf(7), which searches for any heap variable already containg 7 and then assigns the reference to left hand side variable.
+2. AutoBoxing is syntactic sugar. 
 ### Important Notes
 
 1. When you want accurate result , do not use float or doube. Use BigDecimal in that scenario. <br>
