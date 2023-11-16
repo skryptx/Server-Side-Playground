@@ -53,6 +53,10 @@ Definition: <b>Autoboxing</b> is the automatic conversion that the Java compiler
 
 1. Here internally 7 is changed to Integer.valueOf(7), which searches for any heap variable already containg 7 and then assigns the reference to left hand side variable.
 2. AutoBoxing is syntactic sugar. 
+
+### Arrays
+Declaration: `int[] array = {1,2,3}`
+
 ### Important Notes
 
 1. When you want accurate result , do not use float or doube. Use BigDecimal in that scenario. <br>

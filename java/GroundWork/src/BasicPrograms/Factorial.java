@@ -1,4 +1,4 @@
-package JavaBasics.BasicPrograms;
+package BasicPrograms;
 
 public class Factorial {
     public static void main(String[] args) {

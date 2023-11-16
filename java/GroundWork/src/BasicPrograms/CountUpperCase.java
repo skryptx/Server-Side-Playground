@@ -1,4 +1,4 @@
-package JavaBasics.BasicPrograms;
+package BasicPrograms;
 
 public class CountUpperCase {
     public static int countUppercaseLetters(String str) {
