@@ -1,7 +1,5 @@
 package JavaBasics;
 
-import java.util.Arrays;
-
 public class Strings {
     public static void main(String[] args) {
         String s = "This is big ass string.";
@@ -17,6 +15,7 @@ public class Strings {
 
         // Convert string to array
         char[] sArray = s.toCharArray(); // array basically
+        System.out.println(sArray);
 
         System.out.println(s.contains("is"));
         System.out.println(s.indexOf("is"));
