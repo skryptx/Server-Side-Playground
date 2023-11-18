@@ -24,7 +24,7 @@ public class Strings {
         String sinni = "sinni";
         String[] sinniArray = sinni.split("");
         for(String ele: sinniArray) {
-            System.out.println(ele);
+            System.out.println(ele.toUpperCase());
         }
     }
 }
