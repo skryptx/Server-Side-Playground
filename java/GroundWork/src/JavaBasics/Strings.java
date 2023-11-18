@@ -1,5 +1,7 @@
 package JavaBasics;
 
+import java.util.Arrays;
+
 public class Strings {
     public static void main(String[] args) {
         String s = "This is big ass string.";
@@ -18,5 +20,11 @@ public class Strings {
 
         System.out.println(s.contains("is"));
         System.out.println(s.indexOf("is"));
+
+        String sinni = "sinni";
+        String[] sinniArray = sinni.split("");
+        for(String ele: sinniArray) {
+            System.out.println(ele);
+        }
     }
 }
