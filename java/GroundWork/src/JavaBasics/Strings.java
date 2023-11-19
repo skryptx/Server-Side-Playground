@@ -17,7 +17,6 @@ public class Strings {
         char[] sArray = s.toCharArray(); // array basically
         System.out.println(sArray);
 
-        System.out.println(s.contains("is"));
         System.out.println(s.indexOf("is"));
 
         String sinni = "sinni";
