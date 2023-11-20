@@ -12,6 +12,10 @@ Note: Default value of int is 0
 e.g. Lets say we have a class `Car`, User wants to start `Car` by just calling `start()` function, we do not want to know what start is doing or what else start is calling inorder to start the car.
 2. Details of functionlity is abstracted away from the consumer.
 
+### Inheritence
+1. Inherits by using extends <b>keyword</b>.
+2. Call <b>super</b> to initialize parent class variables.
+
 ### Important Points
 
 1. If no constructor provided, then java will provide 0 argument default constructor.
