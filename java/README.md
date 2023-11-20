@@ -24,6 +24,7 @@ e.g. Lets say we have a class `Car`, User wants to start `Car` by just calling `
 1. Abstract class is used when we dont want to define the methods.
 2. If we declared one method as abstract , we have to declare class as abstract as well.
 3. We cannot create instance of abstract class.
+4. It is **must to override methods** if you inherit abstract class.
 
 ### Important Points
 
