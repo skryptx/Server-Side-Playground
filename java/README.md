@@ -14,7 +14,11 @@ e.g. Lets say we have a class `Car`, User wants to start `Car` by just calling `
 
 ### Inheritence
 1. Inherits by using extends <b>keyword</b>.
-2. Call <b>super</b> to initialize parent class variables.
+2. Java implicitly calls <b>super</b> to initialize parent class variables by calling its constructors.
+3. Cannot extend two classes(multiple inheritence).
+
+### Method Overriding
+1. **@Override** annotation is not required although preferred for readability and to avoid any error.
 
 ### Important Points
 
