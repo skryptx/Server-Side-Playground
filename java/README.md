@@ -20,6 +20,11 @@ e.g. Lets say we have a class `Car`, User wants to start `Car` by just calling `
 ### Method Overriding
 1. **@Override** annotation is not required although preferred for readability and to avoid any error.
 
+### Abstract Class
+1. Abstract class is used when we dont want to define the methods.
+2. If we declared one method as abstract , we have to declare class as abstract as well.
+3. We cannot create instance of abstract class.
+
 ### Important Points
 
 1. If no constructor provided, then java will provide 0 argument default constructor.
