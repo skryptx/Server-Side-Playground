@@ -27,7 +27,12 @@ e.g. Lets say we have a class `Car`, User wants to start `Car` by just calling `
 4. It is **must to override methods** if you inherit abstract class.
 
 ### Interfaces
-1. Only declare methods.
+1. Only declare methods although we can give default implementation of the method using **default** keyword.\
+   `interface Machines {`\
+    `default void printName() {`\
+        `    System.out.println("Sinni");`\
+        `}`\
+   `}`
 2. Use **implements** keyword to inherit it inside class.
 3. You have to overrride all the declared methods.
 4. All child class objects can be assigned to this interface type variables.\
