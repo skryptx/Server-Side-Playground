@@ -1,3 +1,4 @@
+## OOP Concepts
 ### Encapsulation
 
 1. The class variables should not be updated directly from outside of the class.
@@ -84,7 +85,16 @@ Definition: <b>Autoboxing</b> is the automatic conversion that the Java compiler
 ### Arrays
 Declaration: `int[] array = {1,2,3}`
 
-### Important Notes
+## Collections
+
+### List:
+1. `List<String> words = List.of("Apple", "Bat", "Cat")` // creates a immutable list. We cannot perform add , remove operation on it.
+2. In order to create mutable list, use one of the below implementation.\
+   `List<String> arrayList = new ArrayList<String>(words);`\
+   `List<String> vectorList = new Vector<String>(words);`\
+   `List<String> linkedList = new LinkedList<String>(words);`
+
+## Important Notes
 
 1. When you want accurate result , do not use float or doube. Use BigDecimal in that scenario. <br>
 `BigDecimal big1 = new BigDecimal("2.3324324");`<br>
