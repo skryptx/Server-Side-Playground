@@ -94,6 +94,10 @@ Declaration: `int[] array = {1,2,3}`
    `List<String> vectorList = new Vector<String>(words);`\
    `List<String> linkedList = new LinkedList<String>(words);`
 
+### Vector:
+1. Used to keep your program threadsafe. e.g if you have 10 threads running , only one thread will be executing at a time.
+2. Rarely used in non thread scenarios. Bad performance due to that.
+
 ## Important Notes
 
 1. When you want accurate result , do not use float or doube. Use BigDecimal in that scenario. <br>
