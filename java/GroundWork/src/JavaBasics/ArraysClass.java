@@ -14,5 +14,7 @@ public class ArraysClass {
         System.out.println(Arrays.toString(marks));
         int[] marks2 = {200,200,200,100,200};
         System.out.println(Arrays.equals(marks1, marks2)); //false, checks the order as well
+
+        String[] names = {"200"};
     }
 }

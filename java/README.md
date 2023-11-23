@@ -93,10 +93,14 @@ Declaration: `int[] array = {1,2,3}`
    `List<String> arrayList = new ArrayList<String>(words);`\
    `List<String> vectorList = new Vector<String>(words);`\
    `List<String> linkedList = new LinkedList<String>(words);`
+3. `list[1]` is not allowed, use `list.get(1)` instead.
+4. `list.set(4, "sinni")` will set index 4 with "sinni".
 
 ### Vector:
 1. Used to keep your program threadsafe. e.g if you have 10 threads running , only one thread will be executing at a time.
 2. Rarely used in non thread scenarios. Bad performance due to that.
+
+
 
 ## Important Notes
 
