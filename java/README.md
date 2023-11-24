@@ -29,16 +29,20 @@ e.g. Lets say we have a class `Car`, User wants to start `Car` by just calling `
 
 ### Interfaces
 1. Only declare methods although we can give default implementation of the method using **default** keyword.\
-   `interface Machines {`\
-    `default void printName() {`\
-        `    System.out.println("Sinni");`\
-        `}`\
-   `}`
+   ```java
+   interface Machines {
+    default void printName() {
+            System.out.println("Sinni");
+        }
+   }
+   ```
 2. Use **implements** keyword to inherit it inside class.
 3. You have to overrride all the declared methods.
 4. All child class objects can be assigned to this interface type variables.\
-   `IMachine computer = new Computer();`\
-   `IMachine iPad = new IPad();` 
+   ```java
+   IMachine computer = new Computer();
+   IMachine iPad = new IPad();
+   ```
 
 ### Important Points
 
@@ -48,17 +52,17 @@ e.g. Lets say we have a class `Car`, User wants to start `Car` by just calling `
 ### Explicit Type Casting
 
 When casting is done from type of more bytes to type of lesser bytes(e.g. long to int), you have to explicitly cast it. e.g.
-
-`long l = 102109832190339203`<br>
-`int i = (int) l; value will not be the same if it exceeds the limit`
-
+```java
+long l = 102109832190339203
+int i = (int) l; value will not be the same if it exceeds the limit
+```
 ### Implicit Type Casting
 
 When casting is done from type of less bytes to type of more bytes(e.g. int to long), just assignment is enough. e.g.
-
-`int i = 10210983`<br>
-`long l = i; //value will be the same`
-
+```java
+int i = 10210983
+long l = i; //value will be the same
+```
 ### Reference Types 
 1. Memory is of two types => Stack and Heap.
 2. <b> Each reference type variable is stored in a heap(and reference address is stored in stack with variable name) and primitive type variable is stored in stack directly. </b>
@@ -72,11 +76,11 @@ b) stringVar.charAt(5) // returns character at index 5
 c) Better option than String(immutable) is "StringBuffer"(in case of multithreading) and "StringBuilder"(incase of single threaded programs). 
 
 ### AutoBoxing and UnBoxing
-
-`Integer seven = 7;`\
-`Integer sevenAgain = 7`\
-`seven == sevenAgain` // true
-
+```java
+Integer seven = 7;
+Integer sevenAgain = 7
+seven == sevenAgain // true
+```
 Definition: <b>Autoboxing</b> is the automatic conversion that the Java compiler makes between the primitive types and their corresponding object wrapper classes. For example, converting an int to an Integer, a double to a Double, and so on. If the conversion goes the other way, this is called <b>Unboxing</b>.
 
 1. Here internally 7 is changed to Integer.valueOf(7), which searches for any heap variable already containg 7 and then assigns the reference to left hand side variable.
@@ -90,12 +94,21 @@ Declaration: `int[] array = {1,2,3}`
 ### List:
 1. `List<String> words = List.of("Apple", "Bat", "Cat")` // creates a immutable list. We cannot perform add , remove operation on it.
 2. In order to create mutable list, use one of the below implementation.\
-   `List<String> arrayList = new ArrayList<String>(words);`\
-   `List<String> vectorList = new Vector<String>(words);`\
-   `List<String> linkedList = new LinkedList<String>(words);`
+   ```java
+   List<String> arrayList = new ArrayList<String>(words);
+   List<String> vectorList = new Vector<String>(words);
+   List<String> linkedList = new LinkedList<String>(words);
+   ```
 3. `list[1]` is not allowed, use `list.get(1)` instead.
 4. `list.set(4, "sinni")` will set index 4 with "sinni".
-5. Conversion from array to list below:
+5. Conversion from array to mutable list below:\
+   ```java
+   int[] numbers = new int[]{1,2,4,5,6,7};
+   List<String> numberImmutableList 
+            = numbers.asList(numbers);\\makes an immutable list
+   List<String> numberArrayList 
+            = new ArrayList<>(numberImmutableList); \\mutable list
+   ```
    
 
 ### Vector:
@@ -105,16 +118,25 @@ Declaration: `int[] array = {1,2,3}`
 ### ***Iterator***:
 1. We cannot remove element from list when we are looping list using for loop.
 2. In this case it is better to use iterator.\
-`List<String> names = new ArrayList<>();`
+```java
+List<String> names = new ArrayList<>(List.of("bat","cat","gorilla"));
+Iterator iterator = names.iterator();
+while(iterator.hasNext()) {
+   if(iterator.next().contains("at")) {
+      iterator.remove();
+   }
+}
+```
 
 
 ## Important Notes
 
-1. When you want accurate result , do not use float or doube. Use BigDecimal in that scenario. <br>
-`BigDecimal big1 = new BigDecimal("2.3324324");`<br>
-`BigDecimal big2 = new BigDecimal("2.2343242");`<br>
-`BigDecimal big3 = big1.add(big2);`
-
-2. Parameter is necessary to be in string other wise it will not be accurate.
-3. Add two different types, result will be bigger type.
-4. if(i) is not allowed, assuming i is of any other type other than boolean.
+1. When you want accurate result , do not use float or doube. Use BigDecimal in that scenario.
+```java
+BigDecimal big1 = new BigDecimal("2.3324324");
+BigDecimal big2 = new BigDecimal("2.2343242");
+BigDecimal big3 = big1.add(big2);
+```
+1. Parameter is necessary to be in string other wise it will not be accurate.
+2. Add two different types, result will be bigger type.
+3. if(i) is not allowed, assuming i is of any other type other than boolean.
