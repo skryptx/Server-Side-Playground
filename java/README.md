@@ -95,11 +95,17 @@ Declaration: `int[] array = {1,2,3}`
    `List<String> linkedList = new LinkedList<String>(words);`
 3. `list[1]` is not allowed, use `list.get(1)` instead.
 4. `list.set(4, "sinni")` will set index 4 with "sinni".
+5. Conversion from array to list below:
+   
 
 ### Vector:
 1. Used to keep your program threadsafe. e.g if you have 10 threads running , only one thread will be executing at a time.
 2. Rarely used in non thread scenarios. Bad performance due to that.
 
+### ***Iterator***:
+1. We cannot remove element from list when we are looping list using for loop.
+2. In this case it is better to use iterator.\
+`List<String> names = new ArrayList<>();`
 
 
 ## Important Notes
