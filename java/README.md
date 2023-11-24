@@ -120,7 +120,7 @@ Declaration: `int[] array = {1,2,3}`
 2. In this case it is better to use iterator.\
 ```java
 List<String> names = new ArrayList<>(List.of("bat","cat","gorilla"));
-Iterator iterator = names.iterator();
+Iterator<String> iterator = names.iterator();
 while(iterator.hasNext()) {
    if(iterator.next().contains("at")) {
       iterator.remove();
