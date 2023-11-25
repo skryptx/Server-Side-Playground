@@ -134,6 +134,7 @@ while(iterator.hasNext()) {
 1. It is doubly linked list.
 
 ### Set
+1. Stores unique value.
 ```java
 Set unmutableSet = Set.of("Apple", "Banana", "Orange");
 ```
@@ -146,6 +147,10 @@ Set unmutableSet = Set.of("Apple", "Banana", "Orange");
 Set<String> hashSet = new HashSet<>(unmutableSet);
 hashSet.Add("Banana"); //will return false and order will change
 ```
+4. **Hashing:**\
+   a. Each cell of array is used to store references to LinkedList for easy searches.\
+   b. The index of array(inturn linkedlist) at which element needs to be inserted is decided my **hash function**.\
+   c. Hash Function can be as simple as **mod n**. (**n** can be any number)
 
 ## Important Notes
 
