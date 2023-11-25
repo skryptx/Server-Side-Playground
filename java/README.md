@@ -93,6 +93,8 @@ Declaration: `int[] array = {1,2,3}`
 
 ### List:
 1. `List<String> words = List.of("Apple", "Bat", "Cat")` // creates a immutable list. We cannot perform add , remove operation on it.
+   
+#### 1. ArrayList
 2. In order to create mutable list, use one of the below implementation.\
    ```java
    List<String> arrayList = new ArrayList<String>(words);
@@ -111,7 +113,7 @@ Declaration: `int[] array = {1,2,3}`
    ```
    
 
-### Vector:
+#### 2. Vector:
 1. Used to keep your program threadsafe. e.g if you have 10 threads running , only one thread will be executing at a time.
 2. Rarely used in non thread scenarios. Bad performance due to that.
 
@@ -128,6 +130,22 @@ while(iterator.hasNext()) {
 }
 ```
 
+#### 3. LinkedList:
+1. It is doubly linked list.
+
+### Set
+```java
+Set unmutableSet = Set.of("Apple", "Banana", "Orange");
+```
+
+#### 1. HashSet (Mutable):
+1. It is mutable.
+2. If you insert already present item it will return **false**.
+3. We cannot add or remove element by index as it does not maintains the order, so no method by index exist.
+```java
+Set<String> hashSet = new HashSet<>(unmutableSet);
+hashSet.Add("Banana"); //will return false and order will change
+```
 
 ## Important Notes
 
