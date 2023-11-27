@@ -174,8 +174,35 @@ a. Inserts in sorted order. It does not care about insertion order.
 
 ### Map
 1. Key-Value pairs.
+   ```java 
+   Map<String, Integer> map = Map.of("A",2,"B",3);
+   map.put("C",3);// not allowed as above method created immutable map
+   map.get("B"); // 3
+   map.get("D"); // null
+   map.containsKey("B"); // true
+   map.containsValue(3); // true
+   map.isEmpty();
+   map.keySet(); // returns collection of keys
+   map.values();// returns collection of values
+   ```
 
 #### 1. HashMap:
+a. More efficient , because it neither cares about insertion order nor about sorting order.
+   ```java
+   Map<String, Integer> map = new HashMap(Map.of("A",2,"B",3)); // mutable
+   ```
+
+#### 2. LinkedHashMap:
+a. Maintains the insertion order
+   ```java
+   Map<String, Integer> map = new LinkedHashMap(Map.of("A",2,"B",3)); // mutable
+   ```
+
+#### 3. TreeMap:
+a. 
+   ```java
+   Map<String, Integer> map = new TreeMap(Map.of("A",2,"B",3)); // mutable
+   ```
 
 ## Important Notes
 
