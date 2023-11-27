@@ -158,6 +158,25 @@ a. Maintains the insertion order. It means the duplicate element encountered doe
 #### 3. TreeSet:
 a. Inserts in sorted order. It does not care about insertion order.
 
+### Queue:
+1. LIFO.
+
+#### 1. Priority Queue:
+1. Sorted order.
+2. We can define the comparator on how to compare two elements for sorting.
+   ```java
+   Queue<String> pq = new PriorityQueue<>(List.of("Cat"));
+   pq.addAll(List.of("Dog", "Bat", "Sleep")); // Queue will be ["Bat", "Cat", "Dog", "Sleep"]
+   pq.poll(); // will pop dequeue the element => "Bat"
+   pq.offer("zebra"); // enqueue the element
+   ```
+
+
+### Map
+1. Key-Value pairs.
+
+#### 1. HashMap:
+
 ## Important Notes
 
 1. When you want accurate result , do not use float or doube. Use BigDecimal in that scenario.
