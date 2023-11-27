@@ -199,7 +199,7 @@ a. Maintains the insertion order
    ```
 
 #### 3. TreeMap:
-a. 
+a. Maintains the sorted order
    ```java
    Map<String, Integer> map = new TreeMap(Map.of("A",2,"B",3)); // mutable
    ```
