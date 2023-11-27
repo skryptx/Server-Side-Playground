@@ -152,6 +152,12 @@ hashSet.Add("Banana"); //will return false and order will change
    b. The index of array(inturn linkedlist) at which element needs to be inserted is decided my **hash function**.\
    c. Hash Function can be as simple as **mod n**. (**n** can be any number)
 
+#### 2. LinkedSet:
+a. Maintains the insertion order. It means the duplicate element encountered does not change the order of the original element present in set.
+
+#### 3. TreeSet:
+a. Inserts in sorted order. It does not care about insertion order.
+
 ## Important Notes
 
 1. When you want accurate result , do not use float or doube. Use BigDecimal in that scenario.
