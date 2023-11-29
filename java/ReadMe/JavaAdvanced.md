@@ -27,3 +27,24 @@ int sum = nums.stream()
 ```
 **first param** -> accumulator with starting value\
 **second param** -> callback function
+
+Other operations:
+
+Intermediate Operations(Which return another stream):
+```java
+List<Integer> nums = List.of(1,12,3,54,5,3);
+nums.stream()
+    .sorted()
+    .forEach(
+        name -> System.out.println(name)
+    );
+
+nums.stream()
+    .distinct()
+    .forEach(
+        name -> System.out.println(name)
+    );    
+
+nums.stream()
+    .map(num -> num*2);
+```
