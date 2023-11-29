@@ -203,6 +203,18 @@ a. Maintains the sorted order
    Map<String, Integer> map = new TreeMap(Map.of("A",2,"B",3)); // mutable
    ```
 
+### Optional Class(very important):
+a. It is used to replace null.\
+b. null is a bad practice.
+```java
+Optional<String> name = new Optional<>();
+name.isPresent() // returns true if the variable has value
+name.get() //to get value because name itself is an object
+```
+c. someone try to access property on null which will return null pointer exception. So in order to fix it below screenshot explains it. 
+![Alt text](image.png)
+d. handling empty value.
+![Alt text](image-1.png)
 ## Important Notes
 
 1. When you want accurate result , do not use float or doube. Use BigDecimal in that scenario.
