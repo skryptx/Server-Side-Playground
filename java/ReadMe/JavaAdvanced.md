@@ -1,7 +1,7 @@
 ### Functional Programming
 
-#### 1. Lambda Expression
-a. Simple example:
+#### 1. <u>Lambda Expression</u>
+Simple example:
 ```java
 List<String> names = List.of("Sinni", "Singla");
 names.stream().forEach(
@@ -9,7 +9,7 @@ names.stream().forEach(
 );
 ```
 
-b. Filter example:
+##### 1.1.1 Filter example:
 ```java
 List<String> names = List.of("Sinni", "Singla");
 names.stream()
@@ -19,7 +19,7 @@ names.stream()
     );
 ```
 
-b. Reduce example:
+##### 1.1.2 Reduce example:
 ```java
 List<Integer> nums = List.of(1,2,3,4,5);
 int sum = nums.stream()
@@ -28,9 +28,9 @@ int sum = nums.stream()
 **first param** -> accumulator with starting value\
 **second param** -> callback function
 
-Other operations:
+##### 1.1.3 Other operations:
 
-Intermediate Operations(Which return another stream):
+-> Intermediate Operations(Which return another stream):
 ```java
 List<Integer> nums = List.of(1,12,3,54,5,3);
 nums.stream()
@@ -48,3 +48,6 @@ nums.stream()
 nums.stream()
     .map(num -> num*2);
 ```
+
+-> Terminal Operations:\
+Do not return a stream. You cannot use another operation on the terminal operation's output. e.g. reduce, forEach, max (accepts comparator) etc
