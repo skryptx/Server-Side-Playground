@@ -51,3 +51,20 @@ nums.stream()
 
 -> Terminal Operations:\
 Do not return a stream. You cannot use another operation on the terminal operation's output. e.g. reduce, forEach, max (accepts comparator) etc
+
+### MultiThreading:
+
+#### 1. Two Ways to do it
+
+##### 1.1 Extend Class Thread
+
+```java
+ Class Task1 extends Thread {
+    @Override()
+    public static void run() {
+        for(int num: IntStream.range(1,100)) {
+            System.out.println(num);
+        }
+    }
+ }
+```

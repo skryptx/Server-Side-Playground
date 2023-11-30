@@ -1,5 +1,7 @@
 package JavaBasics;
 
+import java.util.stream.IntStream;
+
 public class Strings {
     public static void main(String[] args) {
         String s = "This is big ass string.";
@@ -25,6 +27,8 @@ public class Strings {
             System.out.println(ele.toUpperCase());
         }
 
-        System.out.println((int)Math.pow(10000,3));
+        for(int num: IntStream.range(1,100).toArray()) {
+            System.out.println(num);
+        }
     }
 }
