@@ -53,6 +53,7 @@ nums.stream()
 Do not return a stream. You cannot use another operation on the terminal operation's output. e.g. reduce, forEach, max (accepts comparator) etc
 
 ### MultiThreading:
+Advantage: We are keeping CPU busy even when it was supposed to be waiting if using linear approach.
 
 #### 1. Two Ways to do it
 
@@ -94,3 +95,10 @@ public class ThreadClassRunner {
     }
 }
 ```
+
+#### 2. States
+**-> NEW:** Thread is created but has not started(before start call)\
+**-> Runnable:** When first thread is running, and second thread is in runnable state\
+**-> Running:** When thread is executing.\
+**-> Waiting/Blocked:** When thread is waiting for external operation to complete, e.g. db operation, api response. \
+**-> Terminated/Dead:** When execution is finished.
