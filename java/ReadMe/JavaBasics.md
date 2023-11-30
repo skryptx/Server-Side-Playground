@@ -210,11 +210,14 @@ b. null is a bad practice.
 Optional<String> name = new Optional<>();
 name.isPresent() // returns true if the variable has value
 name.get() //to get value because name itself is an object
+
+name.orElse(0); // return actual value if not null, if null returns 0
 ```
 c. someone try to access property on null which will return null pointer exception. So in order to fix it below screenshot explains it. 
 ![Alt text](image.png)
 d. handling empty value.
 ![Alt text](image-1.png)
+
 ## Important Notes
 
 1. When you want accurate result , do not use float or doube. Use BigDecimal in that scenario.
@@ -223,6 +226,11 @@ BigDecimal big1 = new BigDecimal("2.3324324");
 BigDecimal big2 = new BigDecimal("2.2343242");
 BigDecimal big3 = big1.add(big2);
 ```
-1. Parameter is necessary to be in string other wise it will not be accurate.
-2. Add two different types, result will be bigger type.
-3. if(i) is not allowed, assuming i is of any other type other than boolean.
+2. Parameter is necessary to be in string other wise it will not be accurate.
+3. Add two different types, result will be bigger type.
+4. if(i) is not allowed, assuming i is of any other type other than boolean.
+   ```java
+   double cubeOfThree = Math.pow(3,3); // Math.pow return double
+   Double boxTheResult = new Double(cubeOfThree);
+   int integerVal = 
+   ```

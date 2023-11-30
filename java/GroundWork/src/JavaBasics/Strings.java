@@ -24,5 +24,7 @@ public class Strings {
         for(String ele: sinniArray) {
             System.out.println(ele.toUpperCase());
         }
+
+        System.out.println((int)Math.pow(10000,3));
     }
 }
