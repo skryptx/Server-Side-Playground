@@ -90,7 +90,7 @@ public class ThreadClassRunner {
 
         //task2
         Task201to300 task201to300 = new Task201to300();
-        Thread thread201to300 = new Thread(task201to300);
+        Thread thread201 to300 = new Thread(task201to300);
         thread201to300.start();
     }
 }
@@ -102,3 +102,21 @@ public class ThreadClassRunner {
 **-> Running:** When thread is executing.\
 **-> Waiting/Blocked:** When thread is waiting for external operation to complete, e.g. db operation, api response. \
 **-> Terminated/Dead:** When execution is finished.
+
+#### 3. Dependency of threads:
+-> Use join method, which means control will wait for the particular thread to terminate before control goes further.\
+-> task101to200 will complete in example below before task201to300 begins.  
+```java
+public class ThreadClassRunner {
+    public static void main(String[] args) {
+        //task1
+        Task101to200 task101to200 = new Task101to200();
+        task101to200.start();
+        task101to200.join();
+        //task2
+        Task201to300 task201to300 = new Task201to300();
+        Thread thread201to300 = new Thread(task201to300);
+        thread201to300.start();
+    }
+}
+```
