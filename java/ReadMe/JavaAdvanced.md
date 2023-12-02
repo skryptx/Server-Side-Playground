@@ -133,6 +133,21 @@ public synchronized boolean containsKey(Object key) {
 #### 5. Executor Service:(TODO)
 #### 6. Callable:(TODO)
 
+#### 7. Lock:
+**->** Used on particular code blocks if it is not thread safe.\
+**->** implementation below:
+
+```java
+Lock lockForI = new ReentrantLock();
+
+public boolean increment() {
+    lockForI.lock();
+    this.i++;
+    lockForI.unlock();
+}
+```
+#### 7. Atomic Classes:
+
 ### Exception Handling:
 ```java
 try {
