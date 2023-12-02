@@ -120,3 +120,15 @@ public class ThreadClassRunner {
     }
 }
 ```
+
+#### 4. Synchronized Methods:
+```java
+public synchronized boolean containsKey(Object key) {
+    return key instance of Car;
+}
+```
+**->** Only one thread will be able to execute synchronized method at a time, second thread can start execution only if first thread has finished executing the method.\
+**->** It ensures thread safety./
+
+#### 5. Executor Service:(TODO)
+#### 6. Callable:(TODO)
