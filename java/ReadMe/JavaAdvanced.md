@@ -132,3 +132,21 @@ public synchronized boolean containsKey(Object key) {
 
 #### 5. Executor Service:(TODO)
 #### 6. Callable:(TODO)
+
+### Exception Handling:
+```java
+try {
+    String str = "";
+    int length = str.length();
+    return;
+} catch (Exception ex) {
+} finally {
+    System.out.println("Finally will be executed");
+}
+```
+**->** Finally will be executed even if there is a return statement in the try block.
+
+#### 1. Checked and Unchecked Exception:
+
+**->** **Checked exceptions** are checked at compile time.\
+**->** **Unchecked exceptions** occurs at run time. e.g. divide by zero, index out of bounds, null pointer exception etc. These are used by programming errors.
