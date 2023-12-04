@@ -14,3 +14,12 @@
 4. **Non Access Modifiers:**\
    -> **final classes:** It cannot be extended.(e.g. String, Int**eger etc.)\
    -> **final methods:** It cannot override final method. When you dont want to change the functionality of parent method.\
+   -> **final variable:** does not want value to change.\
+   -> **final arguments:** same cannot want value to change.\
+   The following implementation is allowed. We are only doing assignment once.
+   ```java
+        final int i;
+        i=6;
+        System.out.println(i);
+   ```
+5. Cannot access non static methods or variables from static method. But opposite is possible. Cannot use `this` something in static method.
