@@ -35,4 +35,10 @@
       }
    }
    ```
-   **-> Non static nested class(Inner Class):** 
+   *-> Non static nested class(Inner Class):*
+      * It can only be instantiated when outer class is instantiated.
+      * It has access to other members of enclosing class even if they are private.
+  
+   *-> Static nested class:*
+      * It can be instantiated without outer class instantiation.
+      * It do not have access to other members of enclosing class.
