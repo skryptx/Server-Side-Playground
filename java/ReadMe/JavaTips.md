@@ -23,3 +23,16 @@
         System.out.println(i);
    ```
 5. Cannot access non static methods or variables from  static method. But opposite is possible. Cannot use `this` something in static method.
+6. **Nested Classes:**
+   ```java 
+   class OuterClass {
+      ...
+      class InnerClass { //inner class
+         ...
+      }
+      static class StaticNestedClass { //static nested class
+         ...
+      }
+   }
+   ```
+   **-> Non static nested class(Inner Class):** 
