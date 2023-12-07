@@ -34,11 +34,22 @@
          ...
       }
    }
+
+   public static void  main(String[] args) {
+      OuterClass oc = new OuterClass();
+      OuterClass.InnerClass ic = oc.new InnerClass();
+      StaticNestedClass snc = new StaticNestedClass();
+   }
    ```
    *-> Non static nested class(Inner Class):*
       * It can only be instantiated when outer class is instantiated.
-      * It has access to other members of enclosing class even if they are private.
+      * It has ac cess to other members of enclosing class even if they are private.
   
    *-> Static nested class:*
       * It can be instantiated without outer class instantiation.
       * It do not have access to other members of enclosing class.
+      * Cannot refer non static members of enclosing class.
+  
+   **UseCase:**
+   * Useful incase a class is only required in one place.
+   * Encapsulates the class without worrying the outside world. 
