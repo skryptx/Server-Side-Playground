@@ -53,3 +53,12 @@
    **UseCase:**
    * Useful incase a class is only required in one place.
    * Encapsulates the class without worrying the outside world. 
+
+7. Multiline Text Block:
+   ```java
+   """
+   text
+   text
+      text"""
+   ```
+   The above written tab and new line styles will be retained. You cannot write text in same line as opening `"""`.
