@@ -48,8 +48,36 @@ public class SpringBean {
     public Person person2(String name, int age) {
         return new Person('Shanky', age);
     }
+
+    public static void main(String[] args) {
+        ApplicationContext context = new AnnotationConfigApplicationContext(SpringBean.class);
+		System.out.println(context.getBean(Person.class); // will return Person2
+    }
 }
 ```
 3. If you have multiple candidate bean while fetching the bean, you can use **@Primary** so it does not throw exception when trying to access those beans.
 4. In above example, if you do `context.getBean(Person.class)`, there are two signature matching , it will get the one with `Primary` annotation.
-5.
+5. Configure autowiring of objects by Spring Bean. In below example, @ComponentScan:
+   ```java
+    @Configuration
+    @ComponentScan // if Component(Class you want to create objects of, e.g. Person in this case)
+                   // is in different package then you need to provide location of package in parenthesis, 
+                   //@ComponentScan('com.spring.basics')
+    public class SpringBean {
+        @Component // Class you want to create objects of
+        record Person(String name) {}
+
+        @Bean
+        public String name() {
+            return "Sinni";
+        }
+
+        @Bean
+        public String getPersonInfo(Person person) {
+            System.out.println(person.hashCode());
+            return person.toString();
+        }
+    }
+   ```
+
+
