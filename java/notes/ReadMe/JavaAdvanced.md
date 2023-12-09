@@ -18,7 +18,6 @@ names.stream()
         name -> System.out.println(name)
     );
 ```
-
 ##### 1.1.2 Reduce example:
 ```java
 List<Integer> nums = List.of(1,2,3,4,5);
