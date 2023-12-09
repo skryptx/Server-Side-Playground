@@ -39,6 +39,7 @@ public class SpringBean {
     @Bean
     public String getPersonInfo(Person person) {
         System.out.println(person.hashCode());
+        System.out.println(new StringBuffer().append("Test"));
         return person.toString();
     }
 }

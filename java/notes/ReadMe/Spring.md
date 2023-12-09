@@ -80,4 +80,84 @@ public class SpringBean {
     }
    ```
 
+### Dependency Injection:
 
+#### <u>Field</u>:
+
+<span style="color:red">Wrong</span>
+```java
+@Component // Bean is created
+public Person {
+    private Address address; //Bean not autowired without @Autowired Annotation
+    public String toString() {
+        return new StringBuffer().append(address);
+    }
+}
+
+@Component //Bean is created
+public class Address { 
+    private String street;
+}
+```
+
+<span style="color:green">Right</span>
+```java
+@Component // Bean is created
+public Person {
+    @Autowired // makes sure address bean is autowired to Person bean
+    private Address address; //Bean not autowired without @Autowired Annotation
+    public String toString() {
+        return new StringBuffer().append(address);
+    }
+}
+
+@Component //Bean is created
+public class Address { 
+    private String street;
+}
+```
+
+#### <u>Setter Based</u>:
+<span style="color:green">Right</span>
+```java
+@Component // Bean is created
+public Person {
+    private Address address;
+
+    @Autowired
+    public setAddress(Address address) {
+        this.address = address;
+    }
+
+    public String toString() {
+        return new StringBuffer().append(address);
+    }
+}
+
+@Component //Bean is created
+public class Address { 
+    private String street;
+}
+```
+
+#### <u>Constructor Based</u> **(Recommended)**:
+<span style="color:green">Right</span>
+```java
+@Component // Bean is created
+public Person {
+    private Address address;
+
+    @Autowired // not required, just constructor is enough
+    constructor(private address) {
+        this.address = address;
+    }
+    public String toString() {
+        return new StringBuffer().append(address);
+    }
+}
+
+@Component //Bean is created
+public class Address { 
+    private String street;
+}
+```
