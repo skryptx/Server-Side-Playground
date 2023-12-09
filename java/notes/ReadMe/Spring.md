@@ -52,3 +52,4 @@ public class SpringBean {
 ```
 3. If you have multiple candidate bean while fetching the bean, you can use **@Primary** so it does not throw exception when trying to access those beans.
 4. In above example, if you do `context.getBean(Person.class)`, there are two signature matching , it will get the one with `Primary` annotation.
+5.
