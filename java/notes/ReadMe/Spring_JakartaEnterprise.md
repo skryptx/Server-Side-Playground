@@ -34,3 +34,7 @@ Run jar file: **java -jar name-of-thejar.jar**
 1. Add `spring-boot-devtools` artifact.
 2. It will reflect changes you make without restarting the server manually.
 3. In case of dependency update in pom.xml, you will have to restart manually. But in case of java updates, that will be updated automatically.
+
+### Spring Framework vs Spring MVC vs Spring Boot
+
+![Alt text](images/springdiff.png)
