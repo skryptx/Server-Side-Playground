@@ -214,9 +214,9 @@ name.get() //to get value because name itself is an object
 name.orElse(0); // return actual value if not null, if null returns 0
 ```
 c. someone try to access property on null which will return null pointer exception. So in order to fix it below screenshot explains it. 
-![Alt text](image.png)
+![Alt text](images/image.png)
 d. handling empty value.
-![Alt text](image-1.png)
+![Alt text](images/image-1.png)
 
 ## Important Notes
 
