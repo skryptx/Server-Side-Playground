@@ -3,7 +3,7 @@
 1. CDI is a specification (interface). Spring framework implements CDI.
 2. Important Annotations:
    * Inject - same as Autowired in Spring.
-   * NAmed - same as Component in Spring.
+   * Named - same as Component in Spring.
    * Qualifier
    * Scope
    * Singleton
