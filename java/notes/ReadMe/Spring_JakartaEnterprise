@@ -12,3 +12,12 @@
    * Service - If a class has business logic
    * Repository - If the class is interacting with DataStorage, DB etc.
    * Controller
+
+### Spring Boot vs Traditional Approach:
+1. Spring boot provides following out of the box features which were needed to be manually configured earlier.
+   * **Tomcat** server within jar files(embedded server)
+   * **Auto configuration** - that includes required packages to fast creation of java app.
+   * **Maven** integration provides package management and generation of build files, as well as jar file.
+
+Important notes:
+Run jar file: **java -jar name-of-thejar.jar**
