@@ -1,0 +1,14 @@
+### Jakarta Context & Dependency Injection (CDI):
+
+1. CDI is a specification (interface). Spring framework implements CDI.
+2. Important Annotations:
+   * Inject - same as Autowired in Spring.
+   * NAmed - same as Component in Spring.
+   * Qualifier
+   * Scope
+   * Singleton
+3. Stereotype Annotations:
+   * Component - POJO or model class
+   * Service - If a class has business logic
+   * Repository - If the class is interacting with DataStorage, DB etc.
+   * Controller

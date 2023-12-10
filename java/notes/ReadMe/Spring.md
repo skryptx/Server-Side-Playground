@@ -161,3 +161,20 @@ public class Address {
     private String street;
 }
 ```
+
+### Lazy Initialization of Spring Beans:
+    Default method is eager initialization. Creatin is done as soon as app is run.
+
+    Use `@Lazy` on Component/Class. Then initialization will happen when someone uses the bean/class, lets say by doing `getBean(LazyClass.class)`.
+
+    Eager(Default) initialization is recommended as in case of lazy error may come on runtime, while in eager error will be caught on startup.
+
+### Scopes
+Singleton - One object per spring IoC container.
+Prototype - Everytime return different object.
+
+#### Scopes applicable for web aware SpringApplicationContext:
+* Request - One object instance per HTTP request.
+* Session - One object instance per user HTTP session.
+* Application - One object instance per web app runtime.
+* WebSocket - One object instance per webSocket instance.
