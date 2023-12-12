@@ -36,6 +36,7 @@ In Repository, it needs two types:\
 -> `Entity name:` `Course` in this case\
 -> `Entity id type`: `Long` in this case\
 
+
 We can also add custom methods in `CourseSpringDataJpaRepository`. You need to follow the naming convention, the functionality will be provided by SpringJPA.\
 `List<Course> findByAuthor(String author);`\
 Only this line will allow you to query on author column.
