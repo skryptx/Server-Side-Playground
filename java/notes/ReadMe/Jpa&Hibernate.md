@@ -41,3 +41,6 @@ We can also add custom methods in `CourseSpringDataJpaRepository`. You need to f
 `List<Course> findByAuthor(String author);`\
 Only this line will allow you to query on author column.
 
+### Important Notes:
+1. H2 is inmemory database that we can use.
+2. Thing about in memory database is that data gets wiped once application is stopped.
