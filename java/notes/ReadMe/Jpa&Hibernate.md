@@ -44,3 +44,16 @@ Only this line will allow you to query on author column.
 ### Important Notes:
 1. H2 is inmemory database that we can use.
 2. Thing about in memory database is that data gets wiped once application is stopped.
+3. `findById`, `findByAuthor` etc. returns `optional` type, it is to force the user to write check condition in case there is no course. 
+   e.g. 
+   ```java
+   @GetMapping("/courses/{id}")
+   public Course getCourseById(@PathVariable long id) { 
+      Optional<Course> filteredCourse = repository.getCourseById(1);
+      if (filteredCourse.isEmpty()) {
+         throw new RuntimeException("Course not found!");
+      }
+
+      return filteredCourse.get();
+   }
+   ```
