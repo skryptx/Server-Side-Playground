@@ -6,7 +6,7 @@ import org.learn.shared.models.Student;
 import java.util.List;
 import java.util.function.BiConsumer;
 
-public class BiComparatorLambda {
+public class BiConsumerLambda {
     static BiConsumer<Student, String> printThisStudent = (student, name) -> {
         if(student.getName().equals(name)) {
             System.out.println(student.getActivities());
