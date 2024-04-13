@@ -1,4 +1,4 @@
-package org.learn.model.funtionalinterfaces;
+package org.learn.shared.models;
 
 import java.util.List;
 

@@ -1,6 +1,7 @@
 package org.learn.functionalinterface;
 
-import org.learn.model.funtionalinterfaces.Student;
+import org.learn.shared.data.StudentDatabase;
+import org.learn.shared.models.Student;
 
 import java.util.List;
 import java.util.function.BiConsumer;
@@ -42,6 +43,6 @@ public class BiComparatorLambda {
     }
     public static void main(String[] args) {
         simpleExample();
-        realLifeExample(List.of(new Student(1,"Present/Future Sinni", List.of("Coding", "Exercise", "Listening Songs")), new Student(1,"Past Sinni", List.of("Eating", "Sleeping", "Gaming"))), "Present/Future Sinni");
+        realLifeExample(new StudentDatabase().getStudents(), "Present/Future Sinni");
     }
 }
