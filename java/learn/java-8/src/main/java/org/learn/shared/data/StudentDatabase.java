@@ -19,8 +19,8 @@ public class StudentDatabase {
     public StudentDatabase() {
         setStudents(
                 List.of(
-                    new Student(1,"Present/Future Sinni", List.of("Coding", "Exercise", "Listening Songs")),
-                    new Student(1,"Past Sinni", List.of("Eating", "Sleeping", "Gaming"))
+                    new Student(1,"Jagga", List.of("Coding", "Exercise", "Listening Songs")),
+                    new Student(1,"Jatt", List.of("Eating", "Sleeping", "Gaming"))
                 )
         );
     }

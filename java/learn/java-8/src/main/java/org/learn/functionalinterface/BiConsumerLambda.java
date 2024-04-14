@@ -33,7 +33,7 @@ public class BiConsumerLambda {
 
         };
 
-        isCountMatching.andThen(doesStringContainChar).accept("Sinni", 83);
+        isCountMatching.andThen(doesStringContainChar).accept("Jagga", 83);
     }
 
     public static void realLifeExample(List<Student> students, String studentToFind) {
@@ -43,6 +43,6 @@ public class BiConsumerLambda {
     }
     public static void main(String[] args) {
         simpleExample();
-        realLifeExample(new StudentDatabase().getStudents(), "Present/Future Sinni");
+        realLifeExample(new StudentDatabase().getStudents(), "Jagga");
     }
 }

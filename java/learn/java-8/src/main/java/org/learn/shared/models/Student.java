@@ -39,7 +39,7 @@ public class Student {
 
     @Override()
     public String toString() {
-        return "Id: " + getId() + "Name: " + getName() + "\n Activities: " + getActivities();
+        return "Id: " + getId() + "\nName: " + getName() + "\nActivities: " + getActivities();
     }
 
 }
