@@ -32,9 +32,9 @@ public class Student {
     }
 
     public Student(int id, String name, List<String> activities) {
-        setId(id);
-        setName(name);
-        setActivities(activities);
+        this.id = id;
+        this.name = name;
+        this.activities = activities;
     }
 
     @Override()
