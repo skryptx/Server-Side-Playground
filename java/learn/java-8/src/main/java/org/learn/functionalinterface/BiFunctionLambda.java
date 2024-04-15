@@ -17,6 +17,6 @@ public class BiFunctionLambda {
             (startWith, before) -> before.apply(startWith).getFirst();
 
     public static void main(String[] args) {
-        System.out.println(firstStudentNameStartWith.apply("Jat", nameStartWith));
+        System.out.println(firstStudentNameStartWith.apply("Jag", nameStartWith));
     }
 }
