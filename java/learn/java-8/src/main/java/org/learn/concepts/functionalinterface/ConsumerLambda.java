@@ -1,4 +1,4 @@
-package org.learn.functionalinterface;
+package org.learn.concepts.functionalinterface;
 import java.util.Comparator;
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package org.learn.functionalinterface;
+package org.learn.concepts.functionalinterface;
 
 import org.learn.shared.data.StudentDatabase;
 import org.learn.shared.models.Student;
