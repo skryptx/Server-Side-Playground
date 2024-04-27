@@ -5,6 +5,7 @@ import java.util.List;
 public class Student {
     private int id;
     private String name;
+    private double gpa;
     private List<String> activities;
 
     public int getId() {
@@ -23,6 +24,14 @@ public class Student {
         this.name = name;
     }
 
+    public double getGpa() {
+        return gpa;
+    }
+
+    public void setGpa(double gpa) {
+        this.gpa = gpa;
+    }
+
     public List<String> getActivities() {
         return activities;
     }
@@ -31,15 +40,16 @@ public class Student {
         this.activities = activities;
     }
 
-    public Student(int id, String name, List<String> activities) {
+    public Student(int id, String name,double gpa, List<String> activities) {
         this.id = id;
         this.name = name;
+        this.gpa = gpa;
         this.activities = activities;
     }
 
     @Override()
     public String toString() {
-        return "Id: " + getId() + "\nName: " + getName() + "\nActivities: " + getActivities();
+        return "Id: " + getId() + "\nName: " + getName()+ "\nGPA: " + getGpa()  + "\nActivities: " + getActivities();
     }
 
 }

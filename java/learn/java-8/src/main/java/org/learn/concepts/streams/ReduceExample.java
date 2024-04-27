@@ -1,14 +1,24 @@
 package org.learn.concepts.streams;
 
+import org.learn.shared.data.StudentDatabase;
+import org.learn.shared.models.Student;
+
 import java.util.List;
+import java.util.Optional;
 
 public class ReduceExample {
-    public static void main(String[] args) {
-        List<Integer> nums = List.of(1,2,3,4);
-        var result = nums.stream().reduce((a,b)->a*b);
-        var resultWithIdentity = nums.stream().reduce(10,(a,b)->a*b);
-        result.ifPresent(integer -> System.out.printf("Without Identity: %d \n", integer));
 
-        System.out.printf("With Identity: %d", resultWithIdentity);
+    public static Optional<Student> getHighestGpaStudent(List<Student> originalStudents) {
+        return originalStudents.stream().reduce((student1, student2) -> {
+            if(student1.getGpa() > student2.getGpa()) {
+                return student1;
+            }
+            return student2;
+        });
+    }
+
+    public static void main(String[] args) {
+        var highestGpaStudent = getHighestGpaStudent(new StudentDatabase().getStudents());
+        highestGpaStudent.ifPresent(System.out::println);
     }
 }
