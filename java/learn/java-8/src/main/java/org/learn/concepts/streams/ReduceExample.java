@@ -20,5 +20,6 @@ public class ReduceExample {
     public static void main(String[] args) {
         var highestGpaStudent = getHighestGpaStudent(new StudentDatabase().getStudents());
         highestGpaStudent.ifPresent(System.out::println);
+        return;
     }
 }
