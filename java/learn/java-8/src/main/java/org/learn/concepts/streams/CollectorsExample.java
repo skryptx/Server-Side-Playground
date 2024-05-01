@@ -11,7 +11,9 @@ public class CollectorsExample {
     public static void main(String[] args) {
         Map<String, List<String>> nameToStudentMap= new StudentDatabase().getStudents().stream()
                 .collect(Collectors.toMap(Student::getName, Student::getActivities));
+        List<String> names= new StudentDatabase().getStudents().stream().map(Student::getName).toList();
 
-        System.out.println(nameToStudentMap);
+        System.out.println("Hash: " + nameToStudentMap);
+        System.out.println("All Names: " + names);
     }
 }
