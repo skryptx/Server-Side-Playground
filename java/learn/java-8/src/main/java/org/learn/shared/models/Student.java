@@ -12,32 +12,16 @@ public class Student {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public String getName() {
         return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public double getGpa() {
         return gpa;
     }
 
-    public void setGpa(double gpa) {
-        this.gpa = gpa;
-    }
-
     public List<String> getActivities() {
         return activities;
-    }
-
-    public void setActivities(List<String> activities) {
-        this.activities = activities;
     }
 
     public Student(int id, String name,double gpa, List<String> activities) {
