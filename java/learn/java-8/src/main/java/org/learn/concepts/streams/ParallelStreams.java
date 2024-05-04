@@ -1,7 +1,11 @@
 package org.learn.concepts.streams;
 
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+
 public class ParallelStreams {
     public static void main(String[] args) {
-        System.out.println("Processors: " + Runtime.getRuntime().availableProcessors());
+        var list = IntStream.rangeClosed(1, 10);
+        System.out.println(list);
     }
 }
