@@ -1,6 +1,4 @@
 package org.learn.concepts.streams;
-
-import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class ParallelStreams {
