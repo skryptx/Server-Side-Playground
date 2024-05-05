@@ -43,6 +43,6 @@ public class BiConsumerLambda {
     }
     public static void main(String[] args) {
         simpleExample();
-        realLifeExample(new StudentDatabase().getStudents(), "Jagga");
+        realLifeExample(StudentDatabase.studentsSupplier.get(), "Jagga");
     }
 }

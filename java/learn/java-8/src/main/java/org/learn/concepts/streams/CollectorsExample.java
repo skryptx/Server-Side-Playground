@@ -9,9 +9,9 @@ import java.util.stream.Collectors;
 
 public class CollectorsExample {
     public static void main(String[] args) {
-        Map<String, List<String>> nameToStudentMap= new StudentDatabase().getStudents().stream()
+        Map<String, List<String>> nameToStudentMap= StudentDatabase.studentsSupplier.get().stream()
                 .collect(Collectors.toMap(Student::getName, Student::getActivities));
-        int count = (int) new StudentDatabase().getStudents().stream().map(Student::getName).count();
+        int count = (int) StudentDatabase.studentsSupplier.get().stream().map(Student::getName).count();
 
         System.out.println("Hash: " + nameToStudentMap);
         System.out.println("All Names: " + count);

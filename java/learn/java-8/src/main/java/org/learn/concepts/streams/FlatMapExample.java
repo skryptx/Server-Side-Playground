@@ -7,7 +7,7 @@ import java.util.List;
 
 public class FlatMapExample {
     public static void main(String[] args) {
-        List<String> activities = new StudentDatabase().getStudents().stream()
+        List<String> activities = StudentDatabase.studentsSupplier.get().stream()
                 .map(Student::getActivities)
                 .flatMap(List::stream)
                 .toList();

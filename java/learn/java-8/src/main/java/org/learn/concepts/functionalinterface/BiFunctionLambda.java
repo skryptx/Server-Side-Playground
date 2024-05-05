@@ -8,7 +8,7 @@ import java.util.function.BiFunction;
 import java.util.function.Function;
 
 public class BiFunctionLambda {
-    private static final List<Student> students = new StudentDatabase().getStudents();
+    private static final List<Student> students = StudentDatabase.studentsSupplier.get();
 
     protected static Function<String, List<Student>> nameStartWith =
             (predecessor) -> students.stream().filter((student) -> student.getName().startsWith(predecessor)).toList();
