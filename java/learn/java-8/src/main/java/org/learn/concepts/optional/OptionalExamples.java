@@ -15,5 +15,9 @@ public class OptionalExamples {
     public static void main(String[] args) {
         Optional<List<String>> studentActivitiesByName = getActivitiesByStudentName("Jagga");
         studentActivitiesByName.ifPresent(System.out::println);
+
+        var data = Optional.ofNullable(StudentDatabase.studentsSupplier.get());
+        data.map(List::getFirst).map(Student::getDogName)
+                .flatMap(val -> val).ifPresent(System.out::println);
     }
 }
