@@ -1,7 +1,7 @@
 package org.learn.concepts;
 
 import java.time.LocalDate;
-import java.time.Period;
+import java.time.temporal.ChronoUnit;
 
 public class Test {
 
@@ -10,7 +10,7 @@ public class Test {
         System.out.println(month);
         System.out.println(month.getValue());
 
-        System.out.println(LocalDate.now().minus(Period.ofDays(10)));
+        System.out.println(LocalDate.now().minus(1, ChronoUnit.DECADES));
 
     }
 }
