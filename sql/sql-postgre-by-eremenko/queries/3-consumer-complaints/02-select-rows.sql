@@ -1,1 +1,0 @@
-select * from consumer_complaints limit 100;
